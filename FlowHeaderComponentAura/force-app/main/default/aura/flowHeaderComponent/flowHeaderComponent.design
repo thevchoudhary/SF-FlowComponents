@@ -1,0 +1,6 @@
+<design:component>
+    <design:attribute name="Name" label="Name" placeholder="Name" required="true" />
+    <design:attribute name="Icon" label="Icon" placeholder="Icon" required="true" />
+    <design:attribute name="bannerbackgroundcolor" label="bannerbackgroundcolor" placeholder="banner background color" required="true" />
+    <design:attribute name="titletextcolor" label="titletextcolor" placeholder="title text color" required="true" />
+</design:component>

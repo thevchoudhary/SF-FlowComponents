@@ -1,0 +1,21 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,lightning:availableForFlowScreens">
+    <aura:attribute name="Name" type="String" />
+    <aura:attribute name="Icon" type="String" />
+    <aura:attribute name="bannerbackgroundcolor" type="String" />
+    <aura:attribute name="titletextcolor" type="String" />
+    <aura:handler name="init" value="{!this }" action="{!c.doInit }" />
+
+    <aura:html tag="style">
+        :root { --backgroundColor: {!v.bannerbackgroundcolor}; --textColor: {!v.titletextcolor}; }
+    </aura:html>
+
+    <body>
+        <div class="customBanner">
+            <h2>
+                <lightning:icon iconName="{!v.Icon}" title="{!v.Name}" />&nbsp;&nbsp;{!v.Name}
+            </h2>
+        </div>
+    </body>
+
+
+</aura:component>
